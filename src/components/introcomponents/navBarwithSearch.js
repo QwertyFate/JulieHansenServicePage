@@ -112,7 +112,7 @@ const NavbarWithSearch = () => {
                         <a href="/"><img src="https://res.cloudinary.com/luxuryp/images/w_1280,c_limit,f_auto,q_auto/tprhoiglqzbp9mbu8x8s/jhsereno-light" alt="logo" className="h-10 w-auto" /> </a>
                         <button onClick={turnSearchMobile} className="ml-3 text-slate-200"><img src={`${searchOnMobile ? "images/closesvg.svg" : "images/searchwhitesvg.svg"}`} width={20} height={20}/></button>
                     </div>
-                    {searchOn? handleSearchMobile() : null}
+                    {searchOnMobile? handleSearchMobile() : null}
                     <div>
                         <motion.ul className="font-semibold font-Lora mt-10 overflow-hidden flex flex-col" initial="hidden" animate="visible" variants={{ hidden: { opacity: 0 },visible: { opacity: 1, transition: { staggerChildren: 0.9, duration:1 }}}}>
                             <motion.a initial="hidden" animate="visible" onClick={handleAppointment}  className="cursor-pointer uppercase text-lg text-center my-3 hover:underline hover:underline-offset-4 transition-all text-slate-200">Book an appointment</motion.a>
