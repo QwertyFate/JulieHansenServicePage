@@ -4,7 +4,9 @@ import ServicePage from './page/service';
 
 function App() {
   return (
+    <div className='overflow-hidden'>
    <ServicePage />
+   </div>
   );
 }
 
