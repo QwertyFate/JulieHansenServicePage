@@ -88,6 +88,14 @@ const IntroSection = () => {
                     <button onClick={handleAppointment} className={`border-[1px] mt-20 p-4 bg-slate-800 hover:bg-slate-700 font-semibold text-xl opacity-90 border-black text-white font-Lora rounded-lg`}>Book an appointment &#8594;</button>
                 </div>
             </div>
+            <div className="fixed bottom-5 right-4 lg:hidden flex flex-col z-50">
+                <div className="p-2 rounded-full bg-white border-2 my-2 flex items-center border-slate-800">
+                    <a href="mailto:luxuryhomesinwc@icloud.com"><img src="images/mailsvg.svg" alt="maillogo" className="h-10 w-10 cursor-pointer" /></a>
+                </div>
+                <div className="p-2 rounded-full bg-white border-2 my-2 flex items-center border-slate-800">
+                    <a href="tel:(925) 980-4925"><img src="images/phoneblacksvg.svg" alt="maillogo" className="h-10 w-10 cursor-pointer" /></a>
+                </div>
+            </div>
             {appointment ? AppointmentDiv() : null}
         </div>
     )
